@@ -1,0 +1,36 @@
+main{
+    background-color: #31AFAB;
+    width: 100%;
+    height: 695px;
+}
+
+.info1{
+    width: 600px;
+}
+
+.info2{
+    width: 400px;
+}
+
+.box-info2{
+    display: flex;
+    justify-content: end;
+    padding: 0 100px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    padding-top: 100px;    
+}
+
+.cuadrado{
+    width: 310px;
+    height: 260px;
+    background-color: #C5EFA3;
+    border: 4px solid black;
+    margin-bottom: 30px;
+}
+
+
