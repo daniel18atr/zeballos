@@ -7,14 +7,43 @@ a{
     color: black;
 }
 
+h1{        
+    width: 90%;
+    font-size: 60px;
+    text-align: center;
+    padding: 35px;
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+}
+
 header{
-    background-color: #C5EFA3;
     width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content:center;
+    display: inline-block;
     border-bottom:5px solid black;
+    position: relative;
+}
+
+header img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+header h1:hover{
+
 }
 
 /*footer*/
@@ -43,7 +72,7 @@ footer{
     transition: all .3s ease;
 }
 
-ul{
+.footer-links ul{
     list-style: none;
 }
 
@@ -98,13 +127,7 @@ ul{
 
 
 /*regresar*/
-.boxRegre{
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: visible; 
-}
+
 
 .boxNegra{
     background-color: black;
@@ -123,7 +146,8 @@ ul{
     justify-content: center;
     width: 400px;
     height: 90px;
-    background-color: #C5EFA3;
+    background:radial-gradient(ellipse,rgb(216, 113, 216),rgb(176, 19, 176));
+    background-repeat: no-repeat;
     clip-path: polygon(1% 0%, 85% 0%, 99% 100%, 15% 100%);
 }
 

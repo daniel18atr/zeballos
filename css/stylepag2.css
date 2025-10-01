@@ -1,21 +1,39 @@
 main{
-    background-color: #31AFAB;
+    background: linear-gradient(#31AFAB, rgb(57, 57, 188),#31AFAB);
+    background-repeat: no-repeat;
     width: 100%;
-    height: 695px;
+    height: auto;
+    padding-bottom: 30px;
 }
 
 .info1{
-    width: 600px;
+    width: 900px;
+    font-size: 18px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.3px;
 }
 
 .info2{
-    width: 400px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.3px;
+    width: 530px;
+    font-size: 18px;
 }
 
 .box-info2{
     display: flex;
     justify-content: end;
-    padding: 0 100px;
+    padding-right: 15px;
+    margin-top: -200px;
+}
+li{
+    padding: 3px;
+}
+.box-info1{
+    margin-top: -30px;
+    margin-left: -80px;
 }
 
 .contenedor{
@@ -26,11 +44,22 @@ main{
 }
 
 .cuadrado{
-    width: 310px;
-    height: 260px;
+    width: 370px;
+    height: 320px;
     background-color: #C5EFA3;
     border: 4px solid black;
-    margin-bottom: 30px;
 }
 
+.cuadrado img{
+    width: 370px;
+    height: 320px;
+}
+
+.boxRegre{
+    position: absolute;
+    bottom: -550px;
+    left: 35%;
+    transform: translateX(-50%);
+    overflow: visible; 
+}
 
