@@ -8,22 +8,109 @@
     <link rel="stylesheet" href="/css/global.css">
 </head>
 <body>
-        <header>
-        <h1>TEMA</h1>
+    <header>
+        <img src="../assets/imagenes/bannerC.jpeg">
+        <h1>Herramientas de Calidad</h1>
     </header>
     <main>
             <div class="contenedor">
-                <div>
-                    <p class="info1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ex accusantium perferendis facere consequuntur incidunt, expedita a, assumenda ratione dolorem eum vitae molestias aspernatur illum optio delectus minus deserunt aut?</p>
+                <div class="info1">
+                   <ol>
+                        <li>Modelo en Cascada (Waterfall)</li>
+                            <p>Es un modelo secuencial donde cada fase debe completarse antes de pasar a la siguiente. Fases típicas: requisitos → diseño → implementación → pruebas → mantenimiento.</p>
+                            <p>Ventajas</p>
+                                <ul>
+                                    <li>Estructura clara y fácil de entender.</li>
+                                    <li>Documentación abundante en cada fase.</li>
+                                    <li>Bueno para proyectos pequeños y bien definidos.</li>
+                                    <li>Permite control estricto del avance.</li>
+                                </ul>
+                            <p>Desventajas</p>
+                                <ul>
+                                    <li>Muy rígido: no admite cambios una vez definida una fase.</li>
+                                    <li>Si hay errores en requisitos, se descubren tarde.</li>
+                                    <li>Poco feedback del cliente durante el proceso.</li>
+                                    <li>Riesgo alto si el proyecto es largo o complejo.</li>
+                                </ul>
+                            <p>Cuándo usarlo</p>
+                                <ul>
+                                    <li>Proyectos pequeños o con requisitos muy claros y estables.</li>
+                                    <li>Cuando el cliente sabe exactamente lo que quiere.</li>
+                                    <li>Entornos donde se requiere mucha documentación formal.</li>
+                                </ul>
+                        <li>Modelo en V</li>
+                            <p>Es una evolución del cascada, pero con mayor énfasis en la verificación y validación. Cada fase de desarrollo tiene su fase de prueba correspondiente (ej.: requisitos ↔ pruebas de aceptación, diseño ↔ pruebas de integración, etc.).</p>
+                            <p>Ventajas</p>
+                                <ul>
+                                    <li>Se asegura la calidad desde el inicio.</li>
+                                    <li>Enfatiza las pruebas y validación en cada etapa.</li>
+                                    <li>Útil para proyectos críticos (médicos, aeroespaciales, militares).</li>
+                                </ul>
+                            <p>Desventajas</p>
+                                <ul>
+                                    <li>Igual de rígido que cascada: difícil gestionar cambios.</li>
+                                    <li>Mucho esfuerzo en planificación y documentación.</li>
+                                    <li>No se adapta bien a requisitos cambiantes.</li>
+                                </ul>
+                            <p>Cuándo usarlo</p>
+                                <ul>
+                                    <li>Sistemas críticos que requieren alta fiabilidad.</li>
+                                    <li>Proyectos donde los errores deben detectarse lo antes posible.</li>
+                                    <li>Cuando los requisitos son claros y poco cambiantes.</li>
+                                </ul>
+                        <li>Modelo Iterativo</li>
+                            <p>El sistema se desarrolla en versiones parciales que se van refinando con cada iteración. Se empieza con una funcionalidad básica y se mejora gradualmente.</p>
+                            <p>Ventajas</p>
+                                <ul>
+                                    <li>Permite ver resultados tempranos.</li>
+                                    <li>El cliente puede dar feedback en cada iteración.</li>
+                                    <li>Flexible ante cambios en requisitos.</li>
+                                    <li>Reduce riesgos al validar en etapas tempranas.</li>
+                                </ul>
+                            <p>Desventajas</p>
+                                <ul>
+                                    <li>Puede ser más costoso que cascada.</li>
+                                    <li>Requiere una gestión y comunicación constante.</li>
+                                    <li>Si no se planifica bien, puede generar iteraciones interminables.</li>
+                                </ul>
+                            <p>Cuando usarlo</p>
+                                <ul>
+                                    <li>Proyectos con requisitos poco claros o cambiantes.</li>
+                                    <li>Cuando se necesita mostrar prototipos tempranos al cliente.</li>
+                                    <li>Desarrollos donde la retroalimentación continua es clave.</li>
+                                </ul>
+                    </ol>
                 </div>
-                <div class="box">
+                <div class="colum">
                     <div class="boxnegra">
-                    <div class="pentagon"></div>
+                        <img src="../assets/imagenes/modelo.jpeg">
                     </div>          
+                <div class="box-info2">
+                    <ol start="4">
+                       <li>Modelo Incremental</li>
+                            <p>El sistema se construye en módulos o incrementos. Cada incremento añade nuevas funcionalidades hasta completar el producto final. Similar al iterativo, pero con entregas funcionales completas por módulo.</p>
+                            <p>Ventajas</p>
+                                <ul>
+                                    <li>Se entregan partes utilizables rápidamente.</li>
+                                    <li>Flexibilidad para agregar o cambiar funcionalidades.</li>
+                                    <li>Menor riesgo, porque el cliente prueba versiones funcionales desde el inicio.</li>
+                                    <li>Los errores se detectan pronto en cada módulo.</li>
+                                </ul>
+                            <p>Desventajas</p>
+                                <ul>
+                                    <li>Puede complicarse la integración de módulos.</li>
+                                    <li>Se requiere buena planificación modular.</li>
+                                    <li>Si los incrementos no están bien definidos, el sistema puede quedar inconsistente.</li>
+                                </ul>
+                            <p>Cuando usarlo</p>
+                                <ul>
+                                    <li>Proyectos grandes que pueden dividirse en partes claras.</li>
+                                    <li>Cuando se necesita entregar valor rápido al cliente.</li>
+                                    <li>Desarrollo de software empresarial, web o apps con múltiples módulos.</li>
+                                </ul>
+                    </ol>
                 </div>
-            </div>
-            <div class="box-info2">
-                <p class="info2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente ea asperiores qui cum fuga, placeat temporibus ducimus dolores architecto esse possimus praesentium quas iste sit nulla rem. Recusandae, culpa.</p>
+                </div>
             </div>
             <div class="boxRegre">
                 <a href="../index.html"><div class="boxNegra">
@@ -57,13 +144,11 @@
                 </div>
                 <div class="footer-links">
                     <h4>enlaces directos</h4>
-                    <ul>
-                        <li><a href="">tema1</a></li>
-                        <li><a href="">tema2</a></li>
-                        <li><a href="">tema3</a></li>
-                        <li><a href="">tema4</a></li>
-                        <li><a href="">tema5</a></li>
-                    </ul>
+                        <a href="../index.html"><p class="ig">Inicio</p></a>
+                        <a href="/pages/pag1.html"><p class="ig">Fundamentos</p></a>
+                        <a href="/pages/pag2.html"><p class="ig">Tecnicas de Aseguramiento de la Calidad</p></a>
+                        <a href="/pages/pag3.html"><p class="ig">Herramientas de Calidad</p></a>
+                        <a href="/pages/pag4.html"><p class="ig">Ciclo de Vida del Desarrollo de Software (SDLC)</p></a>
                 </div>
             </div>
         </div>

@@ -44,18 +44,20 @@ li{
 }
 
 .circulo{
-    width: 400px;
-    height: 400px;
-    background-color: #F8FEB8;
+    width: 415px;
+    height: 415px;
+    background:radial-gradient(circle,rgb(216, 113, 216),purple,rgb(216, 113, 216));
+    background-repeat:no-repeat; 
     border-radius: 50%;
-    border: 5px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .circulo img{
-    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
 }
 
 .boxRegre{

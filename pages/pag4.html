@@ -9,26 +9,232 @@
 </head>
 <body>
     <header>
-    <h1>TEMA</h1>
+        <img src="../assets/imagenes/bannerC.jpeg">
+        <h1>Ciclo de Vida del Desarrollo de Software (SDLC)</h1>
     </header>
     <main>
-            <p class="info1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium natus repellat molestias ducimus ipsam quas dolore suscipit necessitatibus, nostrum repellendus architecto quo dolores! Rerum voluptatum quibusdam debitis obcaecati illum incidunt.</p>
-
-            <div class="boxTriangulo">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore incidunt eveniet nobis ullam, vel dolores nesciunt mollitia quasi maiores earum numquam quia aspernatur enim tenetur distinctio ut, nisi facere debitis!</p>
-                        <div class="boxNegraTriangulo">
-                            <div class="triangulo">
-                            </div>
-                        </div>
+        <div class="intro">
+        <h2>Qué es el SDLC y por qué importa</h2>
+        <p>El SDLC es el conjunto de fases, procesos y prácticas que guían la creación, entrega y mantenimiento de software. Su objetivo es entregar software útil y de calidad, a tiempo y dentro del presupuesto, minimizando riesgos y facilitando la comunicación entre stakeholders.</p>
+        <p>Beneficios claros: menor riesgo, mayor calidad, trazabilidad, previsibilidad en costos/tiempos y mayor facilidad para mantener y escalar el sistema.</p>
+        <p>Fases principales (descripción detallada)</p>
+        </div>
+        <div class="boxTriangulo">
+            <div class="info1">
+            <ol>
+                <li>Planificación y análisis de viabilidad
+                        <p>Actividades:</p>
+                            <ul>
+                            <li>Definir alcance inicial, objetivos de negocio y stakeholders.</li>
+                            <li>Evaluar viabilidad técnica, económica y de calendario.</li>
+                            <li>Identificar restricciones, dependencias y riesgos iniciales.</li>
+                            </ul>
+                        <p>Entregables:</p>
+                            <ul>
+                            <li>Documento de alcance / Business Case.</li>
+                            <li>Análisis de viabilidad y plan de proyecto inicial.</li>
+                            </ul>
+                        <p>Importancia:</p>
+                            <ul>
+                            <li>Evita arrancar sin objetivos claros; permite estimaciones realistas y priorizar lo esencial.</li>
+                            </ul>
+                </li>
+                <li>Recolección y análisis de requisitos
+                        <p>Actividades:</p>
+                            <ul>
+                            <li>Identificar y conversar con stakeholders (usuarios, negocio, ops).</li>
+                            <li>Capturar requisitos funcionales (qué debe hacer) y no funcionales (seguridad, rendimiento, disponibilidad).</li>
+                            <li>Priorizar requisitos y definir criterios de aceptación.</li>
+                            </ul>
+                        <p>Entregables:</p>
+                            <ul>
+                            <li>Especificación de Requisitos (SRS) o backlog de producto (en ágil).</li>
+                            <li>Historias de usuario y criterios de aceptación.</li>
+                            <li>Matriz de trazabilidad requisitos casos de prueba.</li>
+                            </ul>
+                        <p>Importancia:</p>
+                            <ul>
+                            <li>Requisitos mal hechos = re-trabajo costoso. Buena especificación reduce malentendidos y asegura que el equipo construya lo correcto.</li>
+                            </ul>
+                </li>
+                <li>Diseño (arquitectura y diseño detallado)</li>
+                        <p>Actividades:</p>
+                            <ul>
+                            <li>Diseño de arquitectura: componentes, límites, patrones (microservicios, monolito, etc.).</li>
+                            <li>Diseño de datos: modelo ER, esquema de DB.</li>
+                            <li>Diseño de interfaces: wireframes, API contracts (OpenAPI/Swagger).</li>
+                            <li>Diseño detallado: secuencias, clases, contratos.</li>
+                            </ul>
+                        <p>Entregables:</p>
+                            <ul>
+                            <li>Documento de arquitectura (C4, diagrams UML).</li>
+                            <li>Especificaciones de API y wireframes/prototipos.</li>
+                            <li>Decisiones de tecnología (stack), criterios de escalado.</li>
+                            </ul>
+                        <p>Importancia:</p>
+                            <ul>
+                            <li>Reduce dependencias ocultas y facilita la escalabilidad y mantenibilidad. Un mal diseño provoca “technical debt”.</li>
+                            </ul>
+                <li>Implementación / Codificación</li>
+                        <p>Actividades:</p>
+                            <ul>
+                            <li>Programación según diseño.</li>
+                            <li>Revisión de código (code review / pull requests).</li>
+                            <li>Gestión de versiones (git branching: feature/PR → main).</li>
+                            <li>Integración continua (CI): builds y tests automatizados.</li>
+                            </ul>
+                        <p>Entregables:</p>
+                            <ul>
+                            <li>Repositorio con código, tests y documentación técnica mínima.</li>
+                            <li>Artefactos de build (paquetes, contenedores).</li>
+                            </ul>
+                        <p>Importancia:</p>
+                            <ul>
+                            <li>Fase donde se materializa el producto. Buenas prácticas (estándares, revisiones, CI) reducen errores y facilitan entregas rápidas.</li>
+                            </ul>
+                <li>Pruebas (QA: verificación y validación)</li>
+                    <p>Tipos y actividades:</p>
+                    <ul>
+                        <li>Unit tests, integration tests, system tests, smoke tests.</li>
+                        <li>Pruebas de aceptación (UAT) con usuarios.</li>
+                        <li>Pruebas no funcionales: performance, seguridad, usabilidad, accesibilidad.</li>
+                        <li>Automatización vs pruebas manuales; pipelines de test automatizados.</li>
+                    </ul>
+                    <p>Entregables:</p>
+                    <ul>
+                        <li>Plan de pruebas, casos y resultados.</li>
+                        <li>Reportes de defectos y métricas (defect density, pass rate).</li>
+                    </ul>
+                    <p>Importancia:</p>
+                    <ul>
+                        <li>Detectar fallos antes del despliegue reduce costes. Pruebas continuas aumentan la confianza en el release.</li>
+                    </ul>
+                <li>Despliegue (release)</li>
+                    <p>Actividades:</p>
+                    <ul>
+                        <li>Preparar release: empaquetado, migraciones de DB, configuración.</li>
+                        <li>Estrategias de despliegue: blue-green, canary, rolling, feature flags.</li>
+                        <li>Automatización con CD (Continuous Delivery/Deployment).</li>
+                        <li>Preparación de runbooks y rollback.</li>
+                    </ul>
+                    <p>Entregables:</p>
+                    <ul>
+                        <li>Release notes, pipelines CD, scripts de deploy.</li>
+                        <li>Plan de rollback y validación post-deploy.</li>
+                    </ul>
+                    <p>Importancia:</p>
+                    <ul>
+                        <li>Despliegues seguros y repetibles reducen downtime y riesgo de incidentes en producción.</li>
+                    </ul>
+                <li>Mantenimiento y operación</li>
+                    <p>Actividades:</p>
+                    <ul>
+                        <li>Soporte, corrección de bugs, parches de seguridad.</li>
+                        <li>Evolutivos: nuevas funcionalidades y mejoras.</li>
+                        <li>Monitoreo (logs, métricas, alertas) y gestión de incidentes (MTTR).</li>
+                        <li>Gestión de deuda técnica y actualizaciones.</li>
+                    </ul>
+                    <p>Entregables:</p>
+                    <ul>
+                        <li>Tickets/incidencias resueltas, actualizaciones de documentación, SLA reports.</li>
+                    </ul>
+                    <p>Importancia:</p>
+                    <ul>
+                        <li>La mayor parte del coste de software está en mantenimiento; operar bien asegura continuidad del servicio.</li>
+                    </ul>
+            </ol>
             </div>
+            <div>
+                    <div class="boxNegraTriangulo">
+                  <img src="../assets/imagenes/cicloVida.jpeg">
 
-            <div class="boxRegre">
-                <a href="../index.html"><div class="boxNegra">
-                    <div class="regresar">
-                        <p class="textRegre">REGRESAR</p>
                     </div>
-                </div></a>
+                    <div class="boxNegraTriangulo">
+                        <div class="triangulo">
+                        </div>
+                    </div>
             </div>
+            <div class="info2">
+            
+            <p>Modelos de SDLC (comparativa rápida)</p>
+                <ul>
+                    <li>Waterfall: fases secuenciales. Bueno si requisitos estables. Riesgo: poco flexible.</li>
+                    <li>Iterativo / Incremental: ciclos que entregan partes funcionales. Menos riesgo, entrega valor temprana.</li>
+                    <li>Spiral: enfoque por riesgos; bueno para proyectos grandes y de alto riesgo.</li>
+                    <li>V-Model: enfatiza pruebas en paralelo con diseño; buena trazabilidad.</li>
+                    <li>Ágil (Scrum, Kanban): entregas frecuentes, backlog y sprints; alta adaptabilidad.</li>
+                    <li>DevOps / Continuous: fusiona desarrollo y operaciones; integración y despliegue continuos, automatización y feedback constante.</li>
+                </ul>
+            <p>Cuándo usar cada uno: si el entorno cambia rápido y se necesita validar con usuarios, ágil/DevOps. Si requisitos regulados y fijos, modelos más documentados (V/Waterfall) pueden servir.</p>        
+            <p>Roles clave en SDLC</p>
+                <ul>
+                    <li>Product Owner / Sponsor</li>
+                    <li>Business Analyst</li>
+                    <li>Arquitecto de Software</li>
+                    <li>Desarrolladores</li>
+                    <li>QA / Testers</li>
+                    <li>DevOps / SRE</li>
+                    <li>Seguridad (SecOps)</li>
+                    <li>Usuarios finales / Stakeholders</li>                    
+                </ul>
+            <p>Entregables típicos por fase (resumen)</p>
+                <ul>
+                    <li>Planificación: Business case, cronograma.</li>
+                    <li>Requisitos: SRS, backlog.</li>
+                    <li>Diseño: diagramas, API specs.</li>
+                    <li>Implementación: código, builds.</li>
+                    <li>Pruebas: reportes, casos.</li>
+                    <li>Despliegue: scripts, release notes.</li>
+                    <li>Mantenimiento: parches, incident reports.</li>   
+                </ul>
+            <p>Métricas útiles (KPIs)</p>
+                <ul>
+                    <li>Lead time (commit → deploy).</li>
+                    <li>Cycle time por feature.</li>
+                    <li>Coverage de tests unitarios.</li>
+                    <li>Defect density / escape rate (defectos en producción).</li>
+                    <li>MTTR (Mean Time To Repair).</li>
+                    <li>Uptime / SLA compliance.</li>
+                    <li>Tasa de fallos en despliegue.</li>
+                </ul>
+            <p>Buenas prácticas (prácticas recomendadas)</p>
+                <ul>
+                    <li>Shift-left: integrar pruebas y seguridad desde requisitos/diseño.</li>
+                    <li>Automatizar CI/CD y pruebas repetibles.</li>
+                    <li>Versionar infra como código (IaC).</li>
+                    <li>Revisiones de diseño y código regulares.</li>
+                    <li>Mantener trazabilidad de requisitos a casos de prueba.</li>
+                    <li>Usar feature flags para controlar lanzamientos.</li>
+                    <li>Documentación ligera pero suficiente (APIs, runbooks).</li>
+                    <li>Monitoreo y alertas proactivas en producción.</li>
+                </ul>
+            <p>Errores comunes a evitar</p>
+                <ul>
+                    <li>Empezar a codificar sin requisitos claros.</li>
+                    <li>Falta de pruebas automatizadas.</li>
+                    <li>No planear despliegues (no tener rollback).</li>
+                    <li>Ignorar seguridad y rendimiento hasta producción.</li>
+                    <li>No medir (sin métricas no se mejora).</li>
+                </ul>
+            <p>Checklist rápido para empezar un proyecto bien</p>
+                <ol>
+                    <li>Definir objetivo de negocio y criterios de éxito.</li>
+                    <li>Identificar stakeholders y priorizar requisitos.</li>
+                    <li>Elegir modelo SDLC y stack tecnológico.</li>
+                    <li>Definir pipeline CI/CD mínimo viable.</li>
+                    <li>Crear plan de pruebas y criterios de aceptación.</li>
+                    <li>Implementar monitoreo y runbooks antes del primer release.</li>
+                </ol>
+        </div>
+
+        </div>
+        <div class="boxRegre">
+            <a href="../index.html"><div class="boxNegra">
+                <div class="regresar">
+                    <p class="textRegre">REGRESAR</p>
+                </div>
+            </div></a>
+        </div>
     </main>
     <footer>
         <div class="container">
@@ -54,13 +260,11 @@
                 </div>
                 <div class="footer-links">
                     <h4>enlaces directos</h4>
-                    <ul>
-                        <li><a href="">tema1</a></li>
-                        <li><a href="">tema2</a></li>
-                        <li><a href="">tema3</a></li>
-                        <li><a href="">tema4</a></li>
-                        <li><a href="">tema5</a></li>
-                    </ul>
+                        <a href="../index.html"><p class="ig">Inicio</p></a>
+                        <a href="/pages/pag1.html"><p class="ig">Fundamentos</p></a>
+                        <a href="/pages/pag2.html"><p class="ig">Tecnicas de Aseguramiento de la Calidad</p></a>
+                        <a href="/pages/pag3.html"><p class="ig">Herramientas de Calidad</p></a>
+                        <a href="/pages/pag5.html"><p class="ig">Modelos Tradicionales</p></a>
                 </div>
             </div>
         </div>

@@ -95,7 +95,7 @@ footer{
 .footer-links{
     width: auto;
     margin-left: 30px;
-    margin-right: 190px;
+    margin-right: 100px;
 }
 
 .footer-links h4{
@@ -130,7 +130,7 @@ footer{
 
 
 .boxNegra{
-    background-color: black;
+    background-color: #24262B;
     width: 410px;
     height: 100px;
     clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 15% 100%);
@@ -146,9 +146,10 @@ footer{
     justify-content: center;
     width: 400px;
     height: 90px;
-    background:radial-gradient(ellipse,rgb(216, 113, 216),rgb(176, 19, 176));
+    background:linear-gradient(90deg,rgb(216, 113, 216) ,rgb(194, 3, 194));
     background-repeat: no-repeat;
     clip-path: polygon(1% 0%, 85% 0%, 99% 100%, 15% 100%);
+    color: #24262B;
 }
 
 .textRegre{
