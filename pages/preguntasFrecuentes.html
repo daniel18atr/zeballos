@@ -3,61 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylePag1.css">
-    <link rel="stylesheet" href="/css/global.css">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/preguntasFrecuentes.css">
+    <link rel="stylesheet" href="/css/global.css">
 </head>
 <body>
     <header>
         <img src="../assets/imagenes/bannerC.jpeg">
-        <h1>Estándares de calidad</h1>
+        <h1>Preguntas Frecuentes</h1>
     </header>
     <main>
-        <p class="info1">Los estándares sirven como guías para medir y asegurar la calidad de software. Los más reconocidos son los de la familia ISO 9000 y, más específicamente, los de software: ISO/IEC 9126 y ISO/IEC 25000.</p>
-            <div class="boxTriangulo">
-                <div class="contINFO">
-                <h3>ISO/IEC 9126</h3>
-                <ul>
-                    <li>Publicado en 1991, enfocado en la calidad del software.</li>
-                    <li>Define 6 características de calidad:
-                        <ol>
-                            <li>Funcionalidad: Cumplimiento de requisitos.</li>
-                            <li>Fiabilidad: Capacidad de mantener desempeño bajo condiciones específicas.</li>
-                            <li>Usabilidad: Facilidad de aprendizaje y uso.</li>
-                            <li>Eficiencia: Rendimiento y uso de recursos</li>
-                            <li>Mantenibilidad: Facilidad de modificar el software.</li>
-                            <li>Portabilidad: Facilidad de trasladar el software a otros entornos.</li>
-                        </ol>
-                    </li>
-                </ul>
-                </div>    
-                <div class="boxnegras">
-                    <div class="boxNegraTriangulo">
-                            <img src="../assets/imagenes/iso.jpeg">
-                    </div>
+        <div class="ubiInfo">
+        <div class="box-info1">
+        <details>
+        <summary><h3>¿Qué diferencia hay entre un Sistema de Gestión de Calidad de Software y un modelo de desarrollo?</h3></summary>
+        <p>El SGCS establece las políticas, normas y procesos para asegurar la calidad del software.</p>
+        <p>En cambio, los modelos de desarrollo (como el modelo en cascada o ágil) definen cómo se lleva a cabo el proceso de construcción del software paso a paso.</p>
+        </details>
+        <hr>
+        <details>
+        <summary><h3> ¿Por qué es importante aplicar estándares como ISO/IEC 9126 o 25000?</h3></summary>
+        <p>Estos estándares ofrecen criterios objetivos para evaluar la calidad del software en aspectos como funcionalidad, fiabilidad, usabilidad y eficiencia.</p>
+        <p>Aplicarlos permite medir la calidad, detectar fallas tempranas y mejorar la satisfacción del usuario final.</p>
+        </details>
+        <hr>
+        <details>
+        <summary><h3> ¿En qué se diferencia una prueba funcional de una no funcional?</h3></summary>
+        <ul>
+            <li>Las pruebas funcionales verifican que el software cumpla con lo que se espera (por ejemplo, que los botones y formularios funcionen correctamente).</li>
+            <li>Las no funcionales evalúan características como el rendimiento, la seguridad o la compatibilidad del sistema.</li>
+        </ul>
+        </details>
+        <hr>
+        <details>
+        <summary><h3> ¿Qué papel cumple la gestión de pruebas en la calidad del software?</h3></summary>
+        <p>La gestión de pruebas organiza y supervisa las actividades de verificación y validación.</p>
+        <p>Permite planificar qué probar, quién lo hace, cuándo y con qué herramientas, asegurando trazabilidad y control en cada fase del proyecto.</p>
+        </details>
+        <hr>
+        <details>
+        <summary><h3>¿Cuál es la relación entre el SDLC y la calidad?</h3></summary>
+        <p>El Ciclo de Vida del Desarrollo de Software (SDLC) incluye todas las etapas del desarrollo, desde la planificación hasta el mantenimiento.</p>
+        <p>Incorporar la calidad en cada fase (requisitos, diseño, pruebas, etc.) asegura productos más estables y confiables.</p>
+        </details>
+        <hr>
+        <details>
+        <summary><h3>¿Por qué el modelo en cascada aún se utiliza si existen métodos ágiles?</h3></summary>
+        <p>Aunque es un modelo más rígido, el modelo en cascada sigue siendo útil en proyectos con requisitos fijos, alta documentación o entornos regulados (como sistemas bancarios o médicos).</p>
+        <p>Los métodos ágiles, en cambio, son más efectivos cuando los requisitos cambian con frecuencia.</p>
+        </details>
+        <hr>
+        <details>
+        <summary><h3>¿Cómo se integran las herramientas de calidad en un proceso ágil?</h3></summary>
+        <p>Las herramientas de calidad pueden integrarse en procesos ágiles mediante automatización de pruebas, seguimiento de errores y control de versiones. Esto permite retroalimentación rápida, entregas continuas y mejora constante sin frenar el ritmo del equipo.</p>
+        </details>
+        <hr>
+        <details>
+        <summary><h3>¿Qué buenas prácticas ayudan a mantener la calidad del software a largo plazo?</h3></summary>
+        <ul>
+            <li>Documentar adecuadamente cada fase.</li>
+            <li>Automatizar pruebas y despliegues.</li>
+            <li>Revisar código entre pares (peer review).</li>
+            <li>Monitorear errores en producción.</li>
+            <li>Aplicar retrospectivas y mejoras continuas.</li>
+        </ul>
+        </details>
+        <hr>
+        </div>
+        </div>
+        <div class="boxRegre">
+            <a href="../index.html"><div class="boxNegra">
+                <div class="regresar">
+                    <p class="textRegre">REGRESAR</p>
                 </div>
-                <div class="contINFO">   
-                <h3>ISO/IEC 25000 (SQuaRE)</h3>
-                <p>Actualización y evolución de la ISO 9126.</p>
-                <p>Introduce un modelo más completo de calidad:</p>
-                <ul>
-                    <li>Calidad del producto: Características como funcionalidad, confiabilidad, eficiencia, usabilidad, mantenibilidad y portabilidad.</li>
-                    <li>Calidad en uso: Evalúa desde la perspectiva del usuario final (efectividad, productividad, seguridad, satisfacción).</li>
-                    <li>Medición y evaluación: Define métricas para cada característica de calidad.</li>
-                    <li>Ventaja principal de ISO 25000: Combina el modelo de calidad del producto y la experiencia del usuario, lo que permite un análisis más completo de la calidad.</li>
-                </ul>
-                </div> 
-            </div>
-
-            <div class="boxRegre">
-                <a href="../index.html"><div class="boxNegra">
-                    <div class="regresar">
-                        <p class="textRegre">REGRESAR</p>
-                    </div>
-                </div></a>
-            </div>
+            </div></a>
+        </div>
     </main>
-       <footer>
+     <footer>
         <div class="container">
             <div class="footer-row">
                 <div class="footer-img">

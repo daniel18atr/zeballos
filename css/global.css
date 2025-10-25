@@ -85,6 +85,7 @@ footer{
     color: #BBBBBB;
     margin-bottom: 15px;
     transition: all .3s ease;
+    width: 200px;
 }
 
 .footer-row{
@@ -95,7 +96,7 @@ footer{
 .footer-links{
     width: auto;
     margin-left: 30px;
-    margin-right: 100px;
+    margin-right: 40px;
 }
 
 .footer-links h4{
@@ -108,16 +109,6 @@ footer{
     display: inline-block;
 }
 
-.footer-links ul li a{
-    display: flex;
-    align-items: center;               
-    margin: 20px 0; 
-    font-size: 18px;
-    text-decoration: none;
-    color: #BBBBBB;
-    margin-bottom: 15px;
-    transition: all .3s ease;
-}
 
 .footer-links ul li a:hover, .footer-links .ig:hover{
     color: white;

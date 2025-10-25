@@ -1,0 +1,50 @@
+main{
+    background: linear-gradient(#31AFAB, rgb(57, 57, 188),#31AFAB);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tabla{
+    margin: 100px 0;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 8px solid black;
+    background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    border: hidden;
+}
+
+th, td {
+    border: 8px solid black;
+    padding: 20px;
+}
+
+th {
+    width: 400px;
+    text-align: center;
+    font-size: 27px;
+}
+
+td{
+    width: 600px;
+    font-size: 20px;
+}
+
+
+.boxRegre{
+    padding-bottom: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 455px;
+    height: 110px;
+}
